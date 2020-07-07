@@ -1,0 +1,216 @@
+
+
+body {
+    margin: 0;
+    cursor:url('cursor.png'), default;
+}
+/* HEAD LINE */
+.headline{
+    z-index: 100;
+    position : fixed;
+    font-family: Lack;
+    border : solid 1px #050505;
+    text-transform: uppercase;
+	overflow: hidden;
+    width : 100%;
+    height : 30px;
+    font-size : 25px;
+    top : 0;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+/* HEAD LINE */
+/* HEADER */
+
+/* HEADER */
+/* CONTAINER */
+.container-holder{
+    background-color: #B3A2C3;
+    position : absolute;
+    margin-top : 30px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    padding : 10% 2%;
+    width : 95%;
+    color : #050505;
+    -webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+}
+/* CONTAINER */
+
+/* CARD TEXT */
+.container-card{
+    /* scroll effect */
+
+    transform: scale(.1);
+    transition: ease-in-out .5s;
+    /* scroll effect */
+    margin : 2% 5%;
+    z-index: 100;
+
+
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    background-color: #E0EAEA;
+}
+/* image de navigateur */
+.title-card-img{
+    background-image: url("1.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    height : 20px;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 0;
+}
+.card-txt{
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Titre titre de card */
+.title-card-txt{
+    z-index: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    border-top: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+}
+/* Titre zone de texte */
+.heading-card-txt{
+    font-weight: 600;
+    font-size: 18px;
+}
+/* texte courant */
+.current-card-txt{
+    font-size: 15px;
+    text-align: justify;
+}
+/* CARD TEXT */
+
+/* RESSOURCES */
+@font-face {
+    font-family: 'lack';
+    src: url('font/lack-regular-webfont.woff2') format('woff2'),
+         url('font/lack-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+    color : #000000;
+}
+/* lié à tout texte */
+.padding-side{
+    padding: 5px 10px 3px 10px;
+}
+.padding-elem{
+    padding: 10px 0px;
+}
+.border{
+    border : solid 2px #050505;
+    border-radius: 5px;
+    z-index : 100;
+}
+.card-active{
+    transform: scale(.8) !important;
+}
+/* RESSOURCES */
+
+
+
+/* DEFILE */
+.defileParent {
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 100%;
+}
+.defile {
+	display:block;
+	-webkit-animation:linear marqueelike 20s infinite ;
+	-moz-animation:linear marqueelike 20s infinite ;
+	-o-animation:linear marqueelike 20s infinite ;
+	-ms-animation:linear marqueelike 20s infinite ;
+	animation:linear marqueelike 20s infinite ;
+	margin-left:-150%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+}
+
+.defile:after {
+	content:attr(data-text);
+	white-space:nowrap;
+	padding-left:10px;
+}
+
+@-webkit-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-moz-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-o-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-ms-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 900px) {
+    .container-holder{
+        background-color: #ffffff;
+    }
+    .container{
+        padding : 2% 20%;
+    }
+    /* CARD TEXT */
+
+    /* POSITION CARD - A AMÉLIORER, l'afficher aléatoirement en JS */
+    .pos-1{
+        width : 90%;
+        margin-left: 3%;
+        margin-top: 5%;
+        background-color: #fce296;
+    }
+    .pos-2{
+        width : 60%;
+        margin-left: 20%;
+        margin-top: 6%;
+        background-color: #A8E6CF;
+        /* height : 250px; */
+    }
+    .pos-3{
+        width : 60%;
+        margin-left: 10%;
+        margin-top: 7%;
+        background-color: #96E1A8;
+    }
+    .pos-4{
+        width : 50%;
+        margin-left: 20%;
+        margin-top: 4%;
+        background-color: #A6FFFF;
+    }
+    .pos-5{
+        width : 70%;
+        margin-left: 25%;
+        margin-top: 3%;
+        background-color: #F7B9AF;
+    }
+    /* POSITION CARD */
+}
+
