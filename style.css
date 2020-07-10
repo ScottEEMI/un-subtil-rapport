@@ -21,9 +21,39 @@ body {
     background-color: #ffffff;
 }
 /* HEAD LINE */
-/* HEADER */
-
-/* HEADER */
+/* DISCLAIMER */
+.disclaimer-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 400;
+    background-color: #000;
+}
+.disclaimer{
+    padding: 10%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.buton{
+    max-width: 320px;
+    width: 100%;
+    border-radius: 40px;
+    color: white;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-decoration: none;
+}
+/* DISCLAIMER */
 /* POPORN */
 
 .poporn{
