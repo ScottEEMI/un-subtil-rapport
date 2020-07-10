@@ -207,7 +207,7 @@ a {
     z-index : 100;
 }
 .card-active{
-    transform: scale(.8) !important;
+    transform: scale(1) !important;
 }
 /* RESSOURCES */
 
@@ -263,6 +263,9 @@ a {
 /* RESPONSIVE */
 
 @media screen and (min-width: 780px) {
+    .card-active{
+        transform: scale(.8) !important;
+    }
     .container-holder{
         background-color: #ffffff00;
     }
