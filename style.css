@@ -7,7 +7,7 @@ body {
 }
 /* HEAD LINE */
 .headline{
-    z-index: 100;
+    z-index: 500;
     position : fixed;
     font-family: Lack;
     border : solid 1px #050505;
@@ -30,7 +30,6 @@ body {
     background-color: #000;
 }
 .disclaimer{
-    padding: 10%;
     height: 100%;
     color: #fff;
     display: flex;
@@ -39,18 +38,16 @@ body {
     align-items: center;
     justify-content: center;
 }
-.buton{
-    max-width: 320px;
-    width: 100%;
-    border-radius: 40px;
-    color: white;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    color: #fff;
+.huit{
     text-transform: uppercase;
-    margin: 0 auto;
+    font-size: 18px;
+}
+.buton{
+    margin-top: 2%;
+    padding : 1%;
+    background-color: #fff;
+    color: #000;
+    border: solid;
     text-decoration: none;
 }
 /* DISCLAIMER */
