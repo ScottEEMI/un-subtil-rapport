@@ -65,7 +65,7 @@ function draw() {
     line(x*3/4, y, x/4, 0);
 
   strokeWeight(3);
-  
+
   noFill();
   rect(x/4 - posX,y/4 - posY, x/2 + sizeX, y/2 + sizeY);
   if (sizeX > 750){

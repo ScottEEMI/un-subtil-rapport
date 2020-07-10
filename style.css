@@ -3,6 +3,7 @@
 body {
     margin: 0;
     cursor:url('images/cursor.png'), default;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* HEAD LINE */
 .headline{
@@ -23,6 +24,74 @@ body {
 /* HEADER */
 
 /* HEADER */
+/* POPORN */
+
+.poporn{
+    z-index: 200;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.poporn-1{
+    height: 388px;
+    width: 682px;
+    background-image: url("images/poporn/porn_2.gif");
+}
+.poporn-2{
+    height: 811px;
+    width: 284px;
+    background-image: url("images/poporn/porn_3.gif");
+}
+.poporn-3{
+    height: 130px;
+    width: 542px;
+    background-image: url("images/poporn/porn_4.gif");
+}
+.poporn-4{
+    height: 366px;
+    width: 426px;
+    background-image: url("images/poporn/porn_5.gif");
+}
+.poporn-5{
+    height: 458px;
+    width: 600px;
+    background-image: url("images/poporn/porn_6.gif");
+}
+.poporn-6{
+    height: 438px;
+    width: 438px;
+    background-image: url("images/poporn/porn_7.gif");
+}
+.background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.border-pop{
+    transform: scale(.5);
+    border : solid 2px #050505;
+         position: fixed;
+         z-index: 2000;
+         -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+         -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+         box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
+.deletepop{
+    background-color: #fff;
+        font-size: 50px;
+}
+.score{
+font-family: Lack;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#pop-score{
+    font-size: 50px;
+}
+/* POPORN */
 /* CONTAINER */
 .container-holder{
     background-color: #B3A2C3;
@@ -35,9 +104,6 @@ body {
     padding : 10% 2%;
     width : 95%;
     color : #050505;
-    -webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
 }
 /* CONTAINER */
 
@@ -174,7 +240,7 @@ a {
         background-color: #ffffff00;
     }
     .container{
-        padding : 2% 20%;
+        padding : 2% 15%;
     }
     /* CARD TEXT */
 
@@ -210,6 +276,36 @@ a {
         margin-top: 3%;
         background-color: #F7B9AF;
     }
+    .pos-6{
+        width : 80%;
+        margin-left: 12%;
+        margin-top: 5%;
+        background-color: #fce296;
+    }
+    .pos-7{
+        width : 30%;
+        margin-left: 66%;
+        margin-top: 6%;
+        background-color: #A8E6CF;
+        /* height : 250px; */
+    }
+    .pos-8{
+        width : 46%;
+        margin-left: 27%;
+        margin-top: 7%;
+        background-color: #96E1A8;
+    }
+    .pos-9{
+        width : 57%;
+        margin-left: 38%;
+        margin-top: 4%;
+        background-color: #A6FFFF;
+    }
+    .pos-10{
+        width : 60%;
+        margin-left: 15%;
+        margin-top: 3%;
+        background-color: #F7B9AF;
+    }
     /* POSITION CARD */
 }
-
