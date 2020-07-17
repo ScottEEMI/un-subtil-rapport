@@ -104,9 +104,9 @@ li {
     background-image: url("images/poporn/refonte-1.gif");
 }
 .poporn-8{
-    height: 447px;
-    width: 957px;
-    background-image: url("images/poporn/refonte-2.gif");
+    width: 591px;
+    height: 328px; 
+    background-image: url('images/poporn/M&M_soucoupe.gif');
 }
 .poporn-9{
     height: 500px;
@@ -117,6 +117,11 @@ li {
     height: 424px;
     width: 346px;
     background-image: url("images/poporn/porn_8.png");
+}
+.poporn-11{
+    height: 344px;
+    width: 578px;
+    background-image: url("images/poporn/M&M_fire.gif");
 }
 .background{
     background-position: center;
@@ -385,4 +390,37 @@ a {
         background-color: #F7B9AF;
     }
     /* POSITION CARD */
+}
+
+.pos-1{
+    background-color: #fce296;
+}
+.pos-2{
+    background-color: #A8E6CF;
+    /* height : 250px; */
+}
+.pos-3{
+    background-color: #96E1A8;
+}
+.pos-4{
+    background-color: #A6FFFF;
+}
+.pos-5{
+    background-color: #F7B9AF;
+}
+.pos-6{
+    background-color: #fce296;
+}
+.pos-7{
+    background-color: #A8E6CF;
+    /* height : 250px; */
+}
+.pos-8{
+    background-color: #96E1A8;
+}
+.pos-9{
+    background-color: #A6FFFF;
+}
+.pos-10{
+    background-color: #F7B9AF;
 }
