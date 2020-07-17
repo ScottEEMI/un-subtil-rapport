@@ -1,6 +1,6 @@
 // EFFET DE pornup
 let indexPop = -1;
-let timeR = 2 * 600;
+let timeR = 1.5 * 60000;
 let containerPop = $(".poporn");
 setInterval(function(){
     // console.log("coucou");
