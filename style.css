@@ -37,10 +37,11 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
 }
 .huit{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
 }
 .buton{
     margin-top: 2%;
@@ -49,6 +50,11 @@ body {
     color: #000;
     border: solid;
     text-decoration: none;
+    border-radius: 2px;
+}
+.buton:hover {
+    color: #fff;
+    background-color: #d0006f;
 }
 /* DISCLAIMER */
 /* POPORN */
@@ -89,6 +95,26 @@ body {
     width: 438px;
     background-image: url("images/poporn/porn_7.gif");
 }
+.poporn-7{
+    height: 454px;
+    width: 948px;
+    background-image: url("images/poporn/refonte-1.gif");
+}
+.poporn-8{
+    height: 447px;
+    width: 957px;
+    background-image: url("images/poporn/refonte-2.gif");
+}
+.poporn-9{
+    height: 500px;
+    width: 500px;
+    background-image: url("images/poporn/vokode_messges.gif");
+}
+.poporn-10{
+    height: 424px;
+    width: 346px;
+    background-image: url("images/poporn/porn_8.png");
+}
 .background{
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +131,10 @@ body {
 }
 .deletepop{
     background-color: #fff;
-        font-size: 50px;
+        font-size: 35px;
+}
+.deletepop:hover{
+    color : #d0006f;
 }
 .score{
 font-family: Lack;
@@ -121,7 +150,7 @@ font-family: Lack;
 /* POPORN */
 /* CONTAINER */
 .container-holder{
-    background-color: #B3A2C3;
+    background-color: #fff;
     position : absolute;
     margin-top : 30px;
     display: flex;
@@ -209,6 +238,21 @@ a {
 .card-active{
     transform: scale(1) !important;
 }
+
+.imgs{
+    width : 50%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+.flex-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* RESSOURCES */
 
 
@@ -262,7 +306,7 @@ a {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 780px) {
+@media screen and (orientation: landscape) {
     .card-active{
         transform: scale(.8) !important;
     }
@@ -313,8 +357,8 @@ a {
         background-color: #fce296;
     }
     .pos-7{
-        width : 30%;
-        margin-left: 66%;
+        width : 40%;
+        margin-left: 56%;
         margin-top: 6%;
         background-color: #A8E6CF;
         /* height : 250px; */
