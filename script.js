@@ -1,27 +1,27 @@
 // EFFET DE pornup
 let indexPop = -1;
-let timeR = 2 * 60000;
+let timeR = 2 * 600;
 let containerPop = $(".poporn");
 setInterval(function(){
-    console.log("coucou");
+    // console.log("coucou");
     containerPop.append("<div style='left: "+ft_rand(50)+"%;top:"+ft_rand(45)+"%;' class='border-pop'><div onclick='ft_remove(this.parentElement)' class='deletepop'>X - DELETE</div><div class='background poporn-size poporn-"+ft_rand(11)+"'></div></div>");
 }, timeR);
 
 function ft_remove(me) {
   me.remove();
   indexPop++;
-  console.log(indexPop);
+  // console.log(indexPop);
   $("#pop-score").html(indexPop);
 }
 // EFFET DE SCROLL
 
 let container = document.querySelectorAll(".container-card");
-console.log(container);
+// console.log(container);
 ft_class();
 function ft_class() {
     for (i = 0; i < container.length; i++){
         var rand_pos = "pos-" + ft_rand(10);
-        console.log("pos elem "+i+" : " +rand_pos);
+        // console.log("pos elem "+i+" : " +rand_pos);
         $("#element-"+i).addClass(rand_pos);
     }
 }
