@@ -5,6 +5,9 @@ body {
     cursor:url('images/cursor.png'), default;
     font-family: Arial, Helvetica, sans-serif;
 }
+li {
+    list-style-image: url('images/X_Dorcel_noir.png');
+}
 /* HEAD LINE */
 .headline{
     z-index: 500;
@@ -248,7 +251,6 @@ a {
     overflow: scroll;
 }
 .flex-center{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

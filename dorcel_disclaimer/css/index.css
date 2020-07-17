@@ -1,0 +1,498 @@
+
+@font-face {
+    font-family: 'Helvetica Nueue';
+    src: url('fonts/helvetica-neue/Helvetica_Neue.otf'),url('fonts/helvetica-neue/Helvetica_Neue.eot') format('opentype'),url('fonts/helvetica-neue/Helvetica_Neue.woff2') format('woff2'),url('fonts/helvetica-neue/Helvetica_Neue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering:optimizeLegibility}
+
+@font-face {
+    font-family: 'Helvetica Nueue';
+    src: url('fonts/helvetica-neue/Helvetica_Neue_Light.otf'),url('fonts/helvetica-neue/Helvetica_Neue_Light.eot') format('opentype'),url('fonts/helvetica-neue/Helvetica_Neue_Light.woff2') format('woff2'),url('fonts/helvetica-neue/Helvetica_Neue_Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    text-rendering:optimizeLegibility}
+
+@font-face {
+    font-family: 'PlaisirGothic LT';
+    src: url('fonts/plaisir-gothic/PlaisirGothicLT-Bold.eot') format('opentype'),url('fonts/plaisir-gothic/PlaisirGothicLT-Bold.woff2') format('woff2'),url('fonts/plaisir-gothic/PlaisirGothicLT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    text-rendering:optimizeLegibility}
+
+@font-face {
+    font-family: 'PlaisirGothic LT';
+    src: url('fonts/plaisir-gothic/PlaisirsGothic_Condensed.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    text-rendering:optimizeLegibility}
+
+body, div, p {
+    font-family: 'Helvetica Nueue',sans-serif;
+    margin: 0;
+    ont-size: 1em;
+    line-height: 1.4;
+}
+
+div#loginIframe {
+    position: absolute;
+    z-index: 1500;
+    top: 0;
+    width: 100%;
+    min-width: 996px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    visibility: hidden;
+    overflow: scroll;
+    text-align: center;
+}
+
+#myLoginIframe {
+    position: relative;
+    margin: 0 auto;
+    width: 850px;
+    border: 0;
+}
+
+div#disclaimer-responsive {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #000;
+    background-repeat: no-repeat;
+    line-height: 1
+}
+
+div#disclaimer-responsive img {
+    vertical-align: baseline
+}
+
+div#disclaimer-responsive .header {
+    text-align: center;
+    height: 60px;
+    position: relative
+}
+
+div#disclaimer-responsive .header img {
+    max-height: 38px;
+    padding: 11px 0
+}
+
+div#disclaimer-responsive .header a.account {
+    position: absolute;
+    right: 5%;
+    top: 7px;
+    width: 44px;
+    cursor: pointer;
+    text-decoration: none;
+    background: 0
+}
+
+div#disclaimer-responsive .access {
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+    position: relative;
+    padding-bottom: 35px
+}
+
+div#disclaimer-responsive .access .content {
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto
+}
+
+div#disclaimer-responsive .access .content .under-18 {
+    font-family: 'PlaisirGothic LT';
+    font-size: 18px;
+    margin: 35px auto 10px auto;
+    font-weight: 100
+}
+
+div#disclaimer-responsive .access .content .under-18 b {
+    font-weight: bold
+}
+
+div#disclaimer-responsive .access .content .actions {
+    text-align: center
+}
+
+div#disclaimer-responsive .access .content .actions .enter {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 40px;
+    color: white;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: 'PlaisirGothic LT';
+    font-weight: 700;
+    background-color: #d0006f;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-decoration: none
+}
+
+div#disclaimer-responsive .access .content .actions .enter:hover {
+    background-color: #91004e
+}
+
+div#disclaimer-responsive .access .content .actions .out {
+    font-family: 'PlaisirGothic LT';
+    display: block;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    margin: 15px auto 0 auto
+}
+
+div#disclaimer-responsive .access .content .sealQuality {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block
+}
+
+div#disclaimer-responsive .access .content .sealQuality h3 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 20px auto 10px auto;
+    font-family: 'PlaisirGothic LT';
+    font-weight: 700;
+    color: #1d1d1b
+}
+
+div#disclaimer-responsive .access .content .sealQuality h3 span {
+    color: #d0006f
+}
+
+div#disclaimer-responsive .access .content .sealQuality .right_logo {
+    display: none
+}
+
+div#disclaimer-responsive .access .content .sealQuality .items {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: nowrap
+}
+
+div#disclaimer-responsive .access .content .sealQuality .items .lateral_items {
+    display: flex;
+    width: 49%
+}
+
+div#disclaimer-responsive .access .content .sealQuality .items .item.text {
+    flex-grow: 1
+}
+
+div#disclaimer-responsive .access .content .sealQuality .items .item.logo {
+    width: 10%;
+    max-width: 90px;
+    padding: 0 5px
+}
+
+div#disclaimer-responsive .access .content .sealQuality .items .item.logo img {
+    width: 100%
+}
+
+div#disclaimer-responsive .access .content .sealQuality .items .item .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+div#disclaimer-responsive .access .content .sealQuality .items .item .content img.check {
+    width: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #1d1d1b
+}
+
+div#disclaimer-responsive .access .content .sealQuality .items .item .content p {
+    font-size: 11px;
+    vertical-align: middle;
+    color: #1d1d1b;
+    font-family: 'PlaisirGothic LT';
+    text-align: left;
+    font-weight: 100;
+    text-transform: uppercase
+}
+
+div#disclaimer-responsive .access .content .sealQuality.light {
+    color: white
+}
+
+div#disclaimer-responsive .access .content .sealQuality.light h3 {
+    color: white
+}
+
+div#disclaimer-responsive .access .content .sealQuality.light .items .item.text .content p {
+    color: white
+}
+
+div#disclaimer-responsive .access .content p.description {
+    max-width: 760px;
+    width: 100%;
+    font-family: 'PlaisirGothic LT';
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    margin: 2px auto
+}
+
+div#disclaimer-responsive .access .content p.description a.show_more {
+    color: white;
+    text-decoration: underline
+}
+
+div#disclaimer-responsive .access .content p.description a.show_more:hover {
+    color: white
+}
+
+div#disclaimer-responsive .access .content p.description.left {
+    text-align: left
+}
+
+div#disclaimer-responsive .access .content div.more {
+    max-width: 760px;
+    width: 100%;
+    margin: 15px auto;
+    display: none
+}
+
+div#disclaimer-responsive .access .content div.more p {
+    font-family: 'PlaisirGothic LT';
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    margin: 0 auto;
+    text-align: left
+}
+
+div#disclaimer-responsive .access .content div.protection {
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto
+}
+
+div#disclaimer-responsive .access .content div.protection p {
+    font-family: 'PlaisirGothic LT';
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    margin: 2px auto
+}
+
+div#disclaimer-responsive .access .content div.protection div.icons {
+    text-align: center;
+    margin-top: 10px
+}
+
+div#disclaimer-responsive .access .content div.protection div.icons a {
+    vertical-align: middle;
+    display: inline-flex;
+    background-color: white;
+    height: 25px;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 5px
+}
+
+div#disclaimer-responsive .access .content div.protection div.icons a img {
+    vertical-align: middle;
+    margin: auto
+}
+
+div#disclaimer-responsive .access .content div.protection.left p {
+    text-align: left
+}
+
+div#disclaimer-responsive .access div.languages {
+    text-align: right;
+    position: absolute;
+    bottom: 35px;
+    right: 5%
+}
+
+div#disclaimer-responsive .access div.languages span {
+    color: #666
+}
+
+div#disclaimer-responsive .access div.languages a {
+    font-family: 'PlaisirGothic LT';
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 14px
+}
+
+div#disclaimer-responsive .access div.languages a.active {
+    text-decoration: none;
+    color: #d0006f
+}
+
+div#disclaimer-responsive .access div.languages a:last-child::after {
+    display: none
+}
+
+@media only screen and (max-width: 768px) {
+    div#disclaimer-responsive {
+        min-height:100vh
+    }
+
+    div#disclaimer-responsive div.header {
+        height: 50px;
+        margin-bottom: 36vh
+    }
+
+    div#disclaimer-responsive div.header img {
+        max-height: 32px;
+        padding: 9px 0
+    }
+
+    div#disclaimer-responsive div.header a.account {
+        top: 3px;
+        right: 3%
+    }
+
+    div#disclaimer-responsive .access .content {
+        max-width: 90%;
+        margin: 0 auto
+    }
+
+    div#disclaimer-responsive .access .content .under-18 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 9px
+    }
+
+    div#disclaimer-responsive .access .content .actions .enter {
+        font-size: 20px;
+        width: 80%;
+        max-width: 320px
+    }
+
+    div#disclaimer-responsive .access .content .actions .out {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 10px
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality {
+        width: 80%;
+        max-width: 320px;
+        margin: 0 auto
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality h3 {
+        margin-top: 14px
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .sealContainer {
+        display: flex;
+        justify-content: space-between
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .right_logo {
+        text-align: right;
+        min-width: 70px;
+        max-width: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10px
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .right_logo img {
+        width: 100%
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .items {
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        min-width: 180px
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .items .lateral_items {
+        flex-direction: column;
+        width: 100%
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .items .item {
+        display: block;
+        overflow: hidden;
+        padding: 0
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .items .item.text .content {
+        line-height: 17px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        max-width: 100%
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .items .item.text .content p {
+        font-family: 'PlaisirGothic LT';
+        line-height: 18px;
+        margin: 0;
+        vertical-align: middle;
+        color: #1d1d1b;
+        padding: 0;
+        text-align: left
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .items .item.text:nth-child(1),div#disclaimer-responsive .access .content .sealQuality .items .item.text:nth-child(2) {
+        padding: 0
+    }
+
+    div#disclaimer-responsive .access .content .sealQuality .items .item.logo {
+        display: none
+    }
+
+    div#disclaimer-responsive .access .content p.description {
+        font-size: 11px;
+        line-height: 15px;
+        margin: 10px auto 0 auto
+    }
+
+    div#disclaimer-responsive .access .content div.protection p {
+        font-size: 11px;
+        line-height: 15px;
+        margin: 8px auto 8px auto
+    }
+
+    div#disclaimer-responsive .access .content div.protection div.icons a {
+        padding: 0;
+        margin: 0;
+        width: 22%;
+        max-width: 150px
+    }
+
+    div#disclaimer-responsive .access div.languages {
+        margin: 10px 0 0 0;
+        position: relative;
+        display: block;
+        bottom: inherit;
+        text-align: center;
+        right: inherit
+    }
+}

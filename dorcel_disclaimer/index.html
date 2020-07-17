@@ -1,0 +1,280 @@
+<html>
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Dorcel Disclaimer Responsive</title>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+
+        <style>
+
+            #disclaimer-responsive.disclaimer-default {
+                background-image: url('images/background/desktop.jpg');
+                background-size: contain;
+                background-position-x: center;
+                background-position-y: 60px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                #disclaimer-responsive.disclaimer-default {
+                    background-image: url('images/background/mobile.jpg');
+                    background-size: contain;
+                    background-position-x: center;
+                    background-position-y: top;
+                }
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="disclaimer-responsive" class="disclaimer-default">
+
+
+        <div class="header" style="background-color: rgba(0,0,0, 1)">
+
+            <img src="images/header/logo.png">
+            <a class="signin account" onclick="openSso()">
+                <img src="images/header/account.png">
+            </a>
+
+        </div>
+
+        <div class="access">
+
+            <div class="content">
+
+                <p class="under-18">
+                    <b>INTERDIT</b> AUX MOINS DE 18 ANS
+                </p>
+
+                <div class="actions">
+
+                    <a class="enter agree" href="#" onclick="return false;">
+                        Entrer
+                    </a>
+
+                    <a class="out" href="https://www.google.com/" rel="nofollow">
+                        Sortir
+                    </a>
+
+                </div>
+
+
+                <div class="sealQuality light">
+
+                    <h3>Dorcel <span class="pink">s'engage</span> pour un plaisir adulte</h3>
+
+                    <div class="sealContainer">
+
+                        <div class="right_logo">
+                            <img src="images/seal/logo.png">
+                        </div>
+
+                        <div class="items">
+
+                            <div class="lateral_items">
+                                <div class="item text">
+                                    <div class="content">
+                                        <img class="check" src="images/seal/check.png">
+                                        <p>Protection des mineurs</p>
+                                    </div>
+                                </div>
+                                <div class="item text">
+                                    <div class="content">
+                                        <img class="check" src="images/seal/check.png">
+                                        <p>Respect des données personnelles</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item logo">
+                                <img src="images/seal/logo.png">
+                            </div>
+                            <div class="lateral_items">
+                                <div class="item text">
+                                    <div class="content">
+                                        <img class="check" src="images/seal/check.png">
+                                        <p>Tarification et engagement clairs</p>
+                                    </div>
+                                </div>
+                                <div class="item text">
+                                    <div class="content">
+                                        <img class="check" src="images/seal/check.png">
+                                        <p>Charte éditoriale responsable</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="description">
+                    Ce site est réservé à un public majeur et averti, il propose un contenu à caractère pornographique à des personnes âgées de plus de 18 ans.                <a class="show_more" href="#">Voir plus</a>
+                </p>
+
+                <div class="more">
+                    <p>
+                        En cliquant sur «&nbsp;ENTRER&nbsp;» vous certifiez avoir pris connaissance des obligations suivantes :                </p>
+                    <p>
+                        Etre majeur selon les lois françaises et que ces lois vous autorisent à accéder à ce service.<br>A ne pas faire connaître ce service à des mineurs, sous peine de sanctions pénales.<br>A ne pas diffuser le contenu de ce service qui est la propriété de l’éditeur.<br>A ne pas poursuivre l’éditeur de ce service pour toute action judiciaire.                </p>
+                </div>
+
+                <div class="protection">
+
+                    <p>
+                        Dorcelclub.com vous rappelle qu’il existe des logiciels spécialisés de filtrage des contenus accessibles sur Internet afin de protéger les mineurs, tels que :                </p>
+
+                    <div class="icons">
+
+                        <a rel="nofollow" href="https://www.xooloo.com/fr/" target="_blank">
+                            <img src="images/protection/xooloo.png" alt="Xooloo, solutions de filtrage Internet" height="20">
+                        </a>
+
+                        <a rel="nofollow" href="http://www.netnanny.com/" target="_blank">
+                            <img src="images/protection/net_nanny.png" alt="net nanny" height="16">
+                        </a>
+
+                        <a rel="nofollow" href="https://www.forcepoint.com/" target="_blank">
+                            <img src="images/protection/forcepoint.svg" height="14">
+                        </a>
+
+                        <a rel="nofollow" href="https://www.controlkids.com/" target="_blank">
+                            <img src="images/protection/control_kids.png" height="23">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="languages">
+
+                <a href="?lang=fr" class="item active">FR</a>
+                <span>|</span>
+                <a href="?lang=en" class="item ">EN</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        <script type="application/javascript">
+
+            $(document).ready(function () {
+
+                var disclaimerSelector = $('#disclaimer-responsive');
+
+                var bodySelector = $('body');
+
+                bodySelector.on('click', '#disclaimer-responsive a.show_more', function (e) {
+                    e.preventDefault();
+                    $('#disclaimer-responsive p.description, #disclaimer-responsive .protection').addClass('left');
+                    $('#disclaimer-responsive a.show_more').remove();
+
+                    var imageDisplay = $('div#disclaimer-responsive div.header');
+                    var moreDiv = $('div.more');
+
+                    moreDiv.show();
+
+                    // need to be computed AFTER show, else jquery failed to compute height
+                    var hiddenDisplayedHeight = moreDiv.outerHeight(true);
+                    var currentImageDisplaySize = parseInt(imageDisplay.css('margin-bottom'));
+
+                    imageDisplay.css('margin-bottom', (currentImageDisplaySize - hiddenDisplayedHeight));
+
+
+                });
+
+            });
+
+        </script>
+
+        <!-- SSO Trigger -->
+        <div id="loginIframe"></div>
+        <script async="" src="https://www.account-dorcel.com/js/iframe.min.js"></script>
+        <script>
+
+
+            function closeIframe () {
+                $('#loginIframe').css('visibility', 'hidden').empty();
+                $('body').css('overflow', 'auto').css('height', 'auto');
+            }
+
+            $('#loginIframe').click(function() {
+                closeIframe();
+            });
+
+            var ssoIframe = null;
+
+            function openSso() {
+
+                var iframe = document.createElement('iframe');
+                iframe.src = 'https://www.account-dorcel.com/embed/login?s=<YOUR_SITE>&lang=fr';
+                iframe.setAttribute('id', "myLoginIframe");
+                document.getElementById("loginIframe").appendChild(iframe);
+
+                ssoIframe = new DorcelSsoIframe("myLoginIframe", true);
+
+                $('body').css('overflow', 'hidden').css('height', '100%');
+
+                ssoIframe.onHeightChange(function(h) {
+                    $("#myLoginIframe").height(h);
+                    if ($( window ).height() > h) {
+                        $('#loginIframe').css('display', 'flex');
+                        $('#loginIframe').css('position', 'fixed');
+                    } else {
+                        $('#loginIframe').css('display', 'block');
+                        $('#loginIframe').css('position', 'fixed');
+                    }
+                });
+
+                ssoIframe.onError(function(errors) {
+                });
+
+                ssoIframe.onSuccess(function(auth_token) {
+                    window.location.search = "auth_token=" + auth_token;
+                });
+
+                ssoIframe.onRedirect(function(link) {
+                    window.location.href = link;
+                });
+
+                ssoIframe.onClose(function() {
+                    closeIframe();
+                });
+
+                ssoIframe.resize();
+                $('#loginIframe').css('visibility', 'visible');
+
+            }
+
+            $(window).on('load', function() {
+
+                $(window).resize( function () {
+
+                    if (ssoIframe) {
+                        ssoIframe.resize();
+                        if ($( window ).height() > $("#myLoginIframe").height()) {
+                            $('#loginIframe').css('display', 'flex');
+                            $('#loginIframe').css('position', 'fixed');
+                        } else {
+                            $('#loginIframe').css('display', 'block');
+                            $('#loginIframe').css('position', 'fixed');
+                        }
+                    }
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>
