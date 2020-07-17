@@ -1,6 +1,6 @@
 // EFFET DE pornup
 let indexPop = -1;
-let timeR = 3 * 60000;
+let timeR = 3 * 6000;
 let containerPop = $(".poporn");
 setInterval(function(){
     containerPop.append("<div style='left: "+ft_rand(50)+"%;top:"+ft_rand(45)+"%;' class='border-pop'><div onclick='ft_remove(this.parentElement)' class='deletepop'>X - DELETE</div><div class='background poporn-size poporn-"+ft_rand(10)+"'></div></div>");

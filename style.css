@@ -244,6 +244,7 @@ a {
 
 .imgs{
     width : 50%;
+    height : 50%;
 }
 .flex-row{
     display: flex;
