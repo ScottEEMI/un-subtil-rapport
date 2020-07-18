@@ -73,15 +73,3 @@ var isMobile = {
 function ft_rand(x){
     return Math.floor((Math.random() * x) + 1);
 }
-
-// DARK MODE
-// function swapColor(){
-//     console.log("dark");
-
-//     $(".container").toggleClass("container-dark");
-//     $(".title-card-img").toggleClass("title-card-img-dark");
-//     $(".title-card-txt").toggleClass("title-card-txt-dark");
-//     $(".card-txt").toggleClass("card-txt-dark");
-//     $(".left-card").toggleClass("left-card-dark");
-//     $(".container-card").toggleClass("container-card-dark");
-// }

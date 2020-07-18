@@ -23,6 +23,10 @@ li {
     text-decoration: none;
     background-color: #ffffff;
 }
+.headline:hover{
+        color: #fff;
+        background-color: #000;
+}
 /* HEAD LINE */
 /* DISCLAIMER */
 .disclaimer-container{
